@@ -1,0 +1,26 @@
+[
+  {
+    "name": "London",
+    "temperature": "20°C",
+    "wind": "10km/h",
+    "humidity": "20%"
+  },
+  {
+    "name": "Dublin",
+    "temperature": "16°C",
+    "wind": "8km/h",
+    "humidity": "30%"
+  },
+  {
+    "name": "Madrid",
+    "temperature": "32°C",
+    "wind": "3km/h",
+    "humidity": "5%"
+  },
+  {
+    "name": "Rome",
+    "temperature": "30°C",
+    "wind": "2km/h",
+    "humidity": "4%"
+  }
+]

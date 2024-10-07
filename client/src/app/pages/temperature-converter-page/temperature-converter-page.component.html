@@ -1,0 +1,25 @@
+<div class="page-container">
+  <div class="temperature-converter-container">
+    <form #temp="ngForm" (ngSubmit)="onSubmit(temp)" class="temperature-form">
+      <div class="temperature-field">
+        <label class="temperature-field-label">Celsius:</label>
+        <input
+          type="number"
+          name="celsius"
+          [ngModel]="celsius"
+          (ngModelChange)="onCelsiusChange($event)"
+        />
+      </div>
+      <div class="temperature-field">
+        <label class="temperature-field-label">Farenheit:</label>
+        <input
+          type="number"
+          name="farenheit"
+          [ngModel]="farenheit"
+          (ngModelChange)="onFarenheitChange($event)"
+        />
+      </div>
+      <button>Submit</button>
+    </form>
+  </div>
+</div>
