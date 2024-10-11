@@ -1,0 +1,20 @@
+<div class="page-container">
+  <div class="football-stats-container">
+    <div class="paginator-buttons">
+      @for(number of paginationArray; track $index) {
+      <app-pagination-button
+        [num]="number"
+        (onClick)="updatePageNumber($event)"
+      ></app-pagination-button>
+      }
+    </div>
+    <div class="football-records">
+      @for(record of footballRecords$ | async; track $index) {
+      <li>
+        Competition {{ record.name }} won by {{ record.winner }} in year
+        {{ record.year }}
+      </li>
+      }
+    </div>
+  </div>
+</div>

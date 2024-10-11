@@ -1,0 +1,14 @@
+<div class="weather-stats-container">
+  @if(city !== 'Not Found') {
+  <div class="weather-temperature">
+    <mat-icon fontIcon="sunny"></mat-icon>
+    <span>{{ city.temperature }}</span>
+  </div>
+  <div class="weather-wind-humidity">
+    <span>Wind: {{ city.wind }}</span>
+    <span>Humidity: {{ city.humidity }}</span>
+  </div>
+  } @else {
+  <span>No results found</span>
+  }
+</div>

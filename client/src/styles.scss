@@ -62,4 +62,51 @@ mat-toolbar {
 
 .weather-details-container {
   @extend .temperature-converter-container;
+  flex-direction: column;
+  height: calc(100vh - 128px);
+  width: 100%;
+}
+
+.weather-details {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-query-input {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-query-results {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-temperature {
+  width: 100px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.weather-wind-humidity {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.weather-stats-container {
+  display: flex;
+  align-items: center;
 }

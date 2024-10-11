@@ -1,8 +1,15 @@
 <div class="page-container">
   <div class="weather-details-container">
-    <div>
-      <label>Enter a City: </label>
-      <input type="text" (input)="onInput($event)" />
+    <div class="weather-details">
+      <div class="weather-query-input">
+        <label>Enter a City: </label>
+        <input type="text" (input)="onInput($event)" />
+      </div>
+      <div class="weather-query-results">
+        @if(searchedCity) {
+        <app-weather-details [city]="searchedCity"></app-weather-details>
+        }
+      </div>
     </div>
   </div>
 </div>

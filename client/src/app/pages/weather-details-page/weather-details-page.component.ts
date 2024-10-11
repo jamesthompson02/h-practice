@@ -3,11 +3,12 @@ import { WeatherSearchService } from '../../services/weatherSearch/weather-searc
 import { debounceTime, map, Subscription, tap } from 'rxjs';
 import { WeatherData } from '../../models/weather-data.model';
 import dummyWeatherData from '../../dummy-data/weather-data.json';
+import { WeatherDetailsComponent } from '../../components/weather-details/weather-details.component';
 
 @Component({
   selector: 'app-weather-details-page',
   standalone: true,
-  imports: [],
+  imports: [WeatherDetailsComponent],
   templateUrl: './weather-details-page.component.html',
   styleUrl: './weather-details-page.component.scss',
 })
